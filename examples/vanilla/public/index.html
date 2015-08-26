@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Todos - Vanilla/jQuery</title>
+		<link rel="stylesheet" href="index.css"/>
+	</head>
+	<body></body>
+	<script src="app/libs/jquery/dist/jquery.min.js"></script>
+
+	<script src="app/models/Model.js"></script>
+	<script src="app/models/Todo.js"></script>
+	<script src="app/collections/Collection.js"></script>
+	<script src="app/collections/Todos.js"></script>
+	<script src="app/views/TodoItem.js"></script>
+	<script src="app/views/TodoList.js"></script>
+	<script>
+		$(function() {
+
+			new views.TodoList(new collections.Todos(), $('body'));
+
+		});
+	</script>
+</html>
